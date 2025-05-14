@@ -19,7 +19,7 @@ export default function Header() {
     }
   }, [searchParams]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const urlParams = new URLSearchParams(searchParams);
     urlParams.set('searchTerm', searchTerm);
