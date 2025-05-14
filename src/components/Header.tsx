@@ -9,6 +9,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 export default function Header() {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const a = 0;
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Header() {
     }
   }, [searchParams]);
 
+  
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const urlParams = new URLSearchParams(searchParams);
