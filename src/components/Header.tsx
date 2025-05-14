@@ -9,7 +9,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 export default function Header() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const a = 0;
+
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
